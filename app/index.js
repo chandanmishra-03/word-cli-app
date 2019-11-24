@@ -47,3 +47,54 @@ program
 
 
 
+
+// allow commander to parse `process.argv`
+program.parse(process.argv);
+
+// console.log(process.argv.length);
+if ((process.argv.length) <=3){
+    let err, word;
+
+
+    if (process.argv[2]){
+        if (process.argv[2] == "play" || process.argv[2] == "p" ){
+            play().then(value => {});
+        }
+        else{
+        word = process.argv[2];
+        console.log("word: "+word);
+        console.log("\nDefinitions:\n");
+        getDefinitionsOfWordView(word).then(
+            value => {
+                console.log("\nSynonyms:\n");
+                getSynonymsOfWordView(word).then(value1 =>{
+                    console.log("\nAntonyms:\n")
+                    getAntonymsOfWordView(word).then(value2 => {
+                        console.log("\nExamples:\n")
+                        getExamplesOfWordView(word).then(value3 => {});
+                    });
+                } );
+            });
+
+    };}
+    else{
+        getRandomWordView().then(value => {
+            word=value;
+            console.log("word: "+word);
+            console.log("\nDefinitions:\n");
+            getDefinitionsOfWordView(word).then(
+                value1 => {
+                    console.log("\nSynonyms:\n");
+                    getSynonymsOfWordView(word).then(value2 =>{
+                        console.log("\nAntonyms:\n")
+                        getAntonymsOfWordView(word).then(value3 => {
+                            console.log("\nExamples:\n")
+                            getExamplesOfWordView(word).then(value4 => {});
+                        });
+                    } );
+                });
+        });
+    };
+
+};
+
