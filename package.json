@@ -1,0 +1,24 @@
+{
+  "name": "word-cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIITian-Chandan/word-cli-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIITian-Chandan/word-cli-app/issues"
+  },
+  "homepage": "https://github.com/IIITian-Chandan/word-cli-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15"
+  }
+}
