@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/IIITian-Chandan/word-cli-app#readme",
   "dependencies": {
+    "commander": "^4.0.1",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0"
   }
 }
