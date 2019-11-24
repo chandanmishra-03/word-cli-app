@@ -1,4 +1,4 @@
 .idea
 .idea/
 dumps/
-node_modules/
+node_modules
