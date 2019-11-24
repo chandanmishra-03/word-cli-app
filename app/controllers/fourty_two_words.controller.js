@@ -42,6 +42,9 @@ const getSynonymsOfWord = async function(inputWord) {
 
     [err, result] = await to(response.json());
     if(err) TE(err);
+
+
+    result = arrayToObject(result, "relationshipType");
     return result;
 }
 
@@ -57,6 +60,8 @@ const getAntonymsOfWord = async function(inputWord) {
 
     [err, result] = await to(response.json());
     if(err) TE(err);
+
+    result = arrayToObject(result, "relationshipType");
     return result;
 };
 
@@ -70,6 +75,8 @@ const getExamplesOfWord = async function(inputWord) {
     if(err) TE(err);
     [err, result] = await to(response.json());
     if(err) TE(err);
+
+    result = result["examples"] || [];
 
     return result;
 };

@@ -18,3 +18,11 @@ module.exports.TE = TE = function(err_message, log) {
   throw new Error(err_message);
 };
 
+// converting an array to dict
+let arrayToObject = (array, keyField) =>
+  array.reduce((obj, item) => {
+    obj[item[keyField]] = item;
+    return obj;
+  }, {});
+
+module.exports.arrayToObject = arrayToObject;
