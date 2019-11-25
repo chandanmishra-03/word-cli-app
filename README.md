@@ -33,7 +33,7 @@ It takes terminal commands to interact. Here I have listed some commands and the
 | Word Antonyms | ```dict ant <word>```  |  Display antonyms of a given word. |
 | Word Synonyms | ```dict syn <word>```  |  Display synonyms of a given word. |
 | Word Definitions | ```dict defn <word>```  |  Display definitions of a given word. |
-
+| Word Game | ```dict play``` | play Game |
 
 
 ####  Folder & File Structure:
