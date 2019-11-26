@@ -12,9 +12,13 @@ I have designed a node JS application which performs all mentioned task.
 
 Clone this repo locally. 
 
-```git clone <repo_name>```
+```sh 
+git clone <repo_name>
+```
 
-```cd word-cli-app && sudo npm install -g ./ && sudo npm link```
+```sh
+cd word-cli-app && sudo npm install -g ./ && sudo npm link
+```
 
 Great. Now you can use this functionality anywhere from your local machine.
 
@@ -38,7 +42,7 @@ It takes terminal commands to interact. Here I have listed some commands and the
 
 ####  Folder & File Structure:
 
-```
+```sh
 
 .
 |-- app
